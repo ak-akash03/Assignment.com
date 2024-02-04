@@ -1,3 +1,6 @@
+Disclaimer: Only Use Mern Stack Technology For Building Us !!!!!!
+
+
 # Assignment.com
 
 Welcome to Assignment.com , a dedicated platform committed to empowering students on their academic journey. We understand the unique challenges students face, and our mission is to provide comprehensive support to enhance your learning experience and success.
