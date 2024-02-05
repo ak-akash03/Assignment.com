@@ -1,0 +1,17 @@
+{
+  "name": "assignment.com",
+  "version": "1.0.0",
+  "description": "Disclaimer: Only Use Mern Stack Technology For Building Us !!!!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm start",
+    "Backend": "cd Backend && npm start",
+    "start": "concurrently \"npm run frontend\" \"npm run Backend\""
+  },
+  "author": "ak.akash",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
