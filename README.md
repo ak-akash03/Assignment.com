@@ -1,6 +1,25 @@
 Disclaimer: Only Use Mern Stack Technology For Building Us !!!!!!
 
 
+# Technology Dependencies
+
+Frontend - 
+1) Html
+2) Css
+3) Javascript
+4) Tailwind Css
+5) Bootstrap
+6) React Js or Vite 
+
+Backend -
+1) Express Js
+2) Node Js
+3) Mongo DB
+
+
+
+
+
 # Assignment.com
 
 Welcome to Assignment.com , a dedicated platform committed to empowering students on their academic journey. We understand the unique challenges students face, and our mission is to provide comprehensive support to enhance your learning experience and success.
