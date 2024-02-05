@@ -1,4 +1,4 @@
-Disclaimer: Only Use Mern Stack Technology For Building Us !!!!!!
+Disclaimer: Only Use Mern Stack Technology For Building Us !
 
 
 # Technology Dependencies
