@@ -1,10 +1,11 @@
 import "./App.css";
-import Navbar from "./componants/navbar.js";
+import Header from './pages/Header/Header'
+
 
 function App() {
   return (
     
-      <Navbar/>
+      <Header />
     
   );
 }
