@@ -1,33 +1,38 @@
 import React from "react";
-
+import image from "../../Accets/IMAGE/AboutIMG.png";
+import "./About.css";
 
 export default function About() {
-    return (
-        <div className="py-16 bg-white">
-            <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-                <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-                    <div className="md:5/12 lg:w-5/12">
-                        <img
-                            src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
-                            alt="image"
-                        />
-                    </div>
-                    <div className="md:7/12 lg:w-6/12">
-                        <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                            React development is carried out by passionate developers
-                        </h2>
-                        <p className="mt-6 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
-                            accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
-                            aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!
-                        </p>
-                        <p className="mt-4 text-gray-600">
-                            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-                            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
-                        </p>
-                    </div>
-                </div>
+  return (
+    <>
+      <section className="about-us">
+        <div className="about maindiv">
+          <div className="firstdiv">
+          <img src={image} className="pic" />
+          </div>
+          <div className="text seconddiv">
+            <h2>About Us</h2>
+            <p>
+              We strive to deliver students and academic researchers the best
+              writing assist software accessible through web browser. Our
+              software not only helps you speed up your assignment and essay
+              writing experience, Dr Assignment will help you improve your
+              writing quality and academic grades. Our online programs are built
+              with a team of professional writers, we understand what is needed
+              the most from our users. Our services include streamlined
+              assignment writing software, the famous Assignment master used by
+              over 500,000 students,, auto essay & assignment generator, auto
+              article rewriter, auto bibliography referencing, academic research
+              assist software and article shuffler.
+            </p>
+            <div className="data">
+              <a href="#" className="hire">
+                Learn more
+              </a>
             </div>
+          </div>
         </div>
-    );
+      </section>
+    </>
+  );
 }
