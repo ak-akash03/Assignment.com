@@ -2,7 +2,7 @@ import "./App.css";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
-
+import Help from "./pages/Help/Help"
 import {
   Route,
   RouterProvider,
@@ -17,6 +17,8 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/help" element={<Help />} />
+
     </Route>
   )
 );
