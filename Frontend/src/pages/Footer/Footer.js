@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from '../../Accets/IMAGE/assignmentcom.png'
 
-
-export default function Footer() {
+export default function footer() {
     return (
         <footer className="bg-white border-y">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -10,7 +10,7 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                                src={logo}
                                 className="mr-3 h-16"
                                 alt="Logo"
                             />
@@ -73,10 +73,10 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2023
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                        <a href="https://ak-akash03.github.io/personal-portfolio/" className="hover:underline">
+                            theproteam
                         </a>
-                        . All Rights Reserved.
+                        . All Rights Reserved. 
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                         <Link to="#" className="text-gray-500 hover:text-gray-900">
