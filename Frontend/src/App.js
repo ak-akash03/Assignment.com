@@ -1,12 +1,30 @@
 import "./App.css";
-import Header from './pages/Header/Header'
+import About from "./pages/About/About";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact/Contact";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+import Leyout from "./Leyout";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Leyout />}>
+      <Route path="" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Route>
+  )
+);
 
 function App() {
   return (
-    
-      <Header />
-    
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
