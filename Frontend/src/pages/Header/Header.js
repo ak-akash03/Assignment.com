@@ -1,74 +1,78 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import "./Header.css";
-import logo from "../../Accets/IMAGE/assignmentcom.png";
-export default function Header() {
+
+
+function Header() {
   return (
-    <div  className="maindiv">
-      <header className="shadow sticky z-50 top-0">
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex logo items-center">
-            <img src={logo} className="mr-3 h-12" alt="Logo" />
-          </Link>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+       
+    
 
-          <div className="navbarx">
-            <li>
-              <NavLink
-                className={() =>
-                  `block NavLink py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                }
-              >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
                 Home
-              </NavLink>
+              </a>
             </li>
-            <li>
-              <NavLink
-              to={"/about"}
-                className={() =>
-                  `block NavLink py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                }
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Link
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                About
-              </NavLink>
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </li>
+              </ul>
             </li>
-           
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">
+                Disabled
+              </a>
+            </li>
+          </ul>
           
-            <li>
-              <NavLink
-              to={"/help"}
-                className={() =>
-                  `block NavLink py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                }
-              >
-                Help
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-              to={"/login"}
-                className={() =>
-                  `block NavLink py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                }
-              >
-                Login
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-              to={"/signup"}
-                className={() =>
-                  `block NavLink duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                }
-              >
-                SignUp
-              </NavLink>
-            </li>
-          </div>
-
         </div>
-      </nav>
-    </header>
-    </div>
+      </div>
+    </nav>
   );
 }
+
+export default Header;
