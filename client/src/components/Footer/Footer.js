@@ -6,7 +6,6 @@ import logo from '../../IMAGE/assignmentcom.png'
 function Footer() {
   return <>
 <div className="d-flex flex-column h-100">
-{/* 
 
 
 
@@ -25,6 +24,12 @@ function Footer() {
                     <li><a className='text-white' href="#">About</a></li>
                     <li><a className='text-white' href="#">Get started</a></li>
                     <li><a className='text-white' href="#">FAQ</a></li>
+                </ul>
+                <ul className="list-unstyled text-muted">
+                    <li><a className='text-white' href="#">education</a></li>
+                    <li><a className='text-white' href="#">work</a></li>
+                    <li><a className='text-white' href="#">services</a></li>
+                    <li><a className='text-white' href="#">other</a></li>
                 </ul>
             </div>
             <div className="col-lg-4 col-md-6">
